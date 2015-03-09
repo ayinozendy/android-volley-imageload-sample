@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.android.volley.toolbox.NetworkImageView android:id="@+id/thumbnail"
+                                                 android:layout_width="64dp"
+                                                 android:layout_height="64dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_weight="1" android:layout_width="0dp"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <TextView android:text="Album ID:" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/album_id" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <TextView android:text="Photo ID:" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/photo_id" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
