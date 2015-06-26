@@ -43,7 +43,13 @@ NetworkImageView networkImageView = (NetworkImageView)view.findViewById(R.id.twi
 networkImageView.setImageUrl("http://example.com/image.png",mImageLoader);
 ```
 
-> Note you can also inject the View using AndroidAnnotations like your regular Views.
+Alternatively, you can still use an ImageView then do it like this:
+
+```
+mImageLoader.get("http://example.com/image.png", myImageView, R.drawable.default, R.drawable.default_error);
+```
+
+> Note you can also inject NetworkImageView using AndroidAnnotations like your regular Views.
 
 ###Setup
 
